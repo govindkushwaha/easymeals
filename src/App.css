@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-image: url('./bg-image.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.appbody {
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  z-index: 2;
+}
+.main{
+  display: flex;
+   margin: auto;
+    max-width: 80%;
+}
