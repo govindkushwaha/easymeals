@@ -39,10 +39,10 @@ const Header = () => {
         <div className="novabar">
             <div className="left">
                 <span>HOME</span>
-                <span> CATEGOREES</span>
+                <span> CATEGORIES</span>
                 <span> RECIPES</span>
                 <span> CONTACT</span>
-                <span> AOBUT</span>
+                <span> ABOUT</span>
             </div>
             <div className="right">
                 <span className="socialMedia"> <img alt='media Logo' src={socalMediaLogo} /></span>
