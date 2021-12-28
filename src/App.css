@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('./bg-image.png');
+  background-image: url('./StaticFiles/bg-image.png');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
