@@ -55,7 +55,7 @@ const serchFilter = () =>{
                 <span className="lensLogo" onClick={ serchFilter }> <img alt='lens Logo' src={lensLogo} /></span>
             </div>
             <div className="favourites"> <img alt='lens Logo' src={bookmarkLogo} /> Favourites </div>
-            <div className="cart"> <img alt='lens Logo' src={foodBowlLogo} />  Cart</div>
+            <div className="cart"> <img alt='lens Logo' src={foodBowlLogo} />  Cart (0)</div>
         </div>
 
         <div className="novabar">
