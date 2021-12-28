@@ -1,7 +1,6 @@
 import React from "react";
 import classes from './ProductList-module.css';
 import Product from "../Product/Product";
-import productData from '../../data'
 
 const getFilterData = (data, categoryFilter, mealFilter, dietaryFilter) => {
     let filteredData = data;
@@ -28,9 +27,14 @@ const getFilterData = (data, categoryFilter, mealFilter, dietaryFilter) => {
 
 
 const ProductList = (props) => {
-    const { categoryFilter, mealFilter, dietaryFilter } = props;
-    const filteredData = getFilterData(productData, categoryFilter, mealFilter, dietaryFilter);
-
+    const { categoryFilter, mealFilter, dietaryFilter, productData, flagForSearch } = props;
+    const filteredData;
+    if(!flagForSearch){
+     filteredData = getFilterData(productData, categoryFilter, mealFilter, dietaryFilter);
+    }
+    else{
+        filteredData =productData;
+    }
     return (
         <div className={classes.productSection}>
             {filteredData.map((product) => {
