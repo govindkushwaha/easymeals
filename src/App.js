@@ -51,9 +51,15 @@ function App() {
             mealFilter={mealFilter} onMealFilterChange={onMealFilterChange}
             dietaryFilter={dietaryFilter} onDietaryFilterChange={onDietaryFilterChange}
           />
+            
+          {productData.length> 0 ? 
           <ProductList categoryFilter={categoryFilter} mealFilter={mealFilter} dietaryFilter={dietaryFilter} 
-          productData={productData} flagForSearch={flagForSearch}/>
-        </main>
+          productData={productData} flagForSearch={flagForSearch}/> 
+          : <div style={{display:'block', margin:'auto', textAlign:'center'}}> <span> <strong>Data not Found!</strong></span> 
+          <br/>
+          <h5>To search kindly use keys like Autumn, Spring, Summer, Winter, Dinner, Dessert, Lunch, Breakfast, Egg and Dairy etc.</h5>
+          </div>} 
+      </main>
 
       </div>
     </>
