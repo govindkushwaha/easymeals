@@ -1,14 +1,15 @@
 import React from "react";
 import './Product-module.css';
-import timerLogo from '../../timer-logo.jpg';
-import thumbLogo from '../../thumb-logo.jpg';
-import ligthenLogo from '../../lighten-logo.jpg';
+import timerLogo from '../../StaticFiles/timer-logo.jpg';
+import thumbLogo from '../../StaticFiles/thumb-logo.jpg';
+import ligthenLogo from '../../StaticFiles/lighten-logo.jpg';
 
 const Product = (props) => {
 
     const { product } = props;
     const {image,popular,organic } = product;
     return (
+        <>
         <div className="productContainers" >
             <div className="image-div">
             <img alt="Hello" className="productImage" src={image} />
@@ -21,6 +22,7 @@ const Product = (props) => {
             </div>
             <span className="descriptionSection" >Baked sweet potatoes with creamy avocado & pumkin</span>
         </div>
+        </>
     )
 
 }

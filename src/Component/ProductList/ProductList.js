@@ -28,7 +28,7 @@ const getFilterData = (data, categoryFilter, mealFilter, dietaryFilter) => {
 
 const ProductList = (props) => {
     const { categoryFilter, mealFilter, dietaryFilter, productData, flagForSearch } = props;
-    const filteredData;
+    let filteredData;
     if(!flagForSearch){
      filteredData = getFilterData(productData, categoryFilter, mealFilter, dietaryFilter);
     }

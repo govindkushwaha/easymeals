@@ -1,6 +1,6 @@
 import React from "react";
 import './Filter-module.css';
-import { CATEGORY_FILTER, MEAL_FILTER, DIETARY_FILTER } from "../../globle-variables";
+import { CATEGORY_FILTER, MEAL_FILTER, DIETARY_FILTER } from "../../StaticFiles/globle-variables";
 const Filter = (props) => {
 
     const { categoryFilter, onCategoryFilterChange, mealFilter, onMealFilterChange,
